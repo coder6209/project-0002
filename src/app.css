@@ -1,3 +1,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  * {
+    @apply box-border;
+  }
+
+  body {
+    @apply bg-white text-black;
+  }
+
+  h1 {
+    @apply text-8xl font-bold;
+  }
+
+  h2 {
+    @apply text-6xl font-bold;
+  }
+
+  h3 {
+    @apply text-3xl font-bold;
+  }
+
+  p {
+    @apply text-lg;
+  }
+
+  mark {
+    @apply bg-transparent text-dodger-blue-500;
+  }
+
+  .layout {
+    @apply flex flex-row justify-center justify-items-center items-center gap-3 p-3;
+  }
+
+  .section {
+    @apply layout flex-col h-fit w-full max-w-4xl my-20 p-0;
+  }
+
+  .button-text {
+    @apply transition-all underline opacity-50 hover:opacity-100;
+  }
+
+  .button {
+    @apply hover:bg-opacity-80 transition-all rounded-xl bg-dodger-blue-500 text-white text-lg layout py-2 px-5;
+  }
+
+  .button-sec {
+    @apply hover:bg-opacity-80 transition-all rounded-xl bg-dodger-blue-200 text-dodger-blue-500 text-lg layout py-2 px-5;
+  }
+
+  .button-black {
+    @apply hover:bg-opacity-80 transition-all rounded-xl bg-black text-white text-lg layout py-2 px-5;
+  }
+
+  .button-border-black {
+    @apply hover:opacity-80 transition-all rounded-xl outline outline-2 outline-black text-black text-lg layout py-2 px-5;
+  }
+
+  .button-border {
+    @apply hover:opacity-80 transition-all rounded-xl outline outline-2 outline-dodger-blue-500 text-dodger-blue-600 text-lg layout py-2 px-5;
+  }
+
+  .button-chip {
+    @apply hover:bg-opacity-80 transition-all rounded-full bg-dodger-blue-500 text-white text-lg layout p-3;
+  }
+
+  .button-sec-chip {
+    @apply hover:bg-opacity-80 transition-all rounded-full bg-dodger-blue-200 text-dodger-blue-500 text-lg layout p-3;
+  }
+}
