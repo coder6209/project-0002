@@ -4,7 +4,7 @@
 
 @layer components {
   * {
-    @apply box-border;
+    @apply relative box-border overflow-hidden;
   }
 
   body {
@@ -28,7 +28,7 @@
   }
 
   mark {
-    @apply bg-transparent text-dodger-blue-500;
+    @apply bg-transparent text-chardonnay-500;
   }
 
   .layout {
@@ -44,11 +44,11 @@
   }
 
   .button {
-    @apply hover:bg-opacity-80 transition-all rounded-xl bg-dodger-blue-500 text-white text-lg layout py-2 px-5;
+    @apply hover:bg-opacity-80 transition-all rounded-xl bg-chardonnay-300 text-lg layout py-2 px-5;
   }
 
   .button-sec {
-    @apply hover:bg-opacity-80 transition-all rounded-xl bg-dodger-blue-200 text-dodger-blue-500 text-lg layout py-2 px-5;
+    @apply hover:bg-opacity-80 transition-all rounded-xl bg-chardonnay-200 text-chardonnay-600 text-lg layout py-2 px-5;
   }
 
   .button-black {
@@ -60,14 +60,14 @@
   }
 
   .button-border {
-    @apply hover:opacity-80 transition-all rounded-xl outline outline-2 outline-dodger-blue-500 text-dodger-blue-600 text-lg layout py-2 px-5;
+    @apply hover:opacity-80 transition-all rounded-xl outline outline-2 outline-chardonnay-400 text-chardonnay-400 text-lg layout py-2 px-5;
   }
 
   .button-chip {
-    @apply hover:bg-opacity-80 transition-all rounded-full bg-dodger-blue-500 text-white text-lg layout p-3;
+    @apply hover:bg-opacity-80 transition-all rounded-full bg-chardonnay-300 text-lg layout p-3;
   }
 
   .button-sec-chip {
-    @apply hover:bg-opacity-80 transition-all rounded-full bg-dodger-blue-200 text-dodger-blue-500 text-lg layout p-3;
+    @apply hover:bg-opacity-80 transition-all rounded-full bg-chardonnay-200 text-chardonnay-600 text-lg layout p-3;
   }
 }
