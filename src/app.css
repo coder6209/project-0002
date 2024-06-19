@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply bg-white text-black;
+    @apply bg-white text-black text-lg;
   }
 
   h1 {
@@ -23,12 +23,8 @@
     @apply text-3xl font-bold;
   }
 
-  p {
-    @apply text-lg;
-  }
-
   mark {
-    @apply bg-transparent text-chardonnay-500;
+    @apply bg-transparent text-text-500;
   }
 
   .layout {
@@ -44,30 +40,30 @@
   }
 
   .button {
-    @apply hover:bg-opacity-80 transition-all rounded-xl bg-chardonnay-300 text-lg layout py-2 px-5;
+    @apply hover:bg-opacity-80 transition-all rounded-xl bg-background-600 layout py-2 px-5;
   }
 
   .button-sec {
-    @apply hover:bg-opacity-80 transition-all rounded-xl bg-chardonnay-200 text-chardonnay-600 text-lg layout py-2 px-5;
+    @apply hover:bg-opacity-80 transition-all rounded-xl bg-secondary-800 layout py-2 px-5;
   }
 
   .button-black {
-    @apply hover:bg-opacity-80 transition-all rounded-xl bg-black text-white text-lg layout py-2 px-5;
+    @apply hover:bg-opacity-80 transition-all rounded-xl bg-black text-white layout py-2 px-5;
   }
 
   .button-border-black {
-    @apply hover:opacity-80 transition-all rounded-xl outline outline-2 outline-black text-black text-lg layout py-2 px-5;
+    @apply hover:opacity-80 transition-all rounded-xl outline outline-2 outline-black text-black layout py-2 px-5;
   }
 
   .button-border {
-    @apply hover:opacity-80 transition-all rounded-xl outline outline-2 outline-chardonnay-400 text-chardonnay-400 text-lg layout py-2 px-5;
+    @apply hover:opacity-80 transition-all rounded-xl outline outline-2 outline-chardonnay-400 text-text-400 layout py-2 px-5;
   }
 
   .button-chip {
-    @apply hover:bg-opacity-80 transition-all rounded-full bg-chardonnay-300 text-lg layout p-3;
+    @apply hover:bg-opacity-80 transition-all rounded-full bg-background-300 layout p-3;
   }
 
   .button-sec-chip {
-    @apply hover:bg-opacity-80 transition-all rounded-full bg-chardonnay-200 text-chardonnay-600 text-lg layout p-3;
+    @apply hover:bg-opacity-80 transition-all rounded-full bg-background-200 text-text-600 layout p-3;
   }
 }
