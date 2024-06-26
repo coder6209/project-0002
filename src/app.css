@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @layer components {
   * {
-    @apply relative box-border overflow-hidden;
+    @apply relative box-border overflow-hidden border-white/10;
   }
 
   body {
-    @apply bg-white text-black text-lg;
+    @apply bg-black text-white text-lg;
   }
 
   h1 {
@@ -24,46 +32,22 @@
   }
 
   mark {
-    @apply bg-transparent text-text-500;
+    @apply bg-transparent font-bold;
   }
 
-  .layout {
-    @apply flex flex-row justify-center justify-items-center items-center gap-3 p-3;
+  .flex-center {
+    @apply flex justify-center justify-items-center items-center;
   }
 
   .section {
-    @apply layout flex-col h-fit w-full max-w-4xl my-20 p-0;
+    @apply flex-center flex-col h-fit w-full max-w-4xl my-20 p-0;
   }
 
-  .button-text {
-    @apply transition-all underline opacity-50 hover:opacity-100;
+  .btn-text {
+    @apply transition-all opacity-50 hover:opacity-100;
   }
 
-  .button {
-    @apply hover:bg-opacity-80 transition-all rounded-xl bg-background-600 layout py-2 px-5;
-  }
-
-  .button-sec {
-    @apply hover:bg-opacity-80 transition-all rounded-xl bg-secondary-800 layout py-2 px-5;
-  }
-
-  .button-black {
-    @apply hover:bg-opacity-80 transition-all rounded-xl bg-black text-white layout py-2 px-5;
-  }
-
-  .button-border-black {
-    @apply hover:opacity-80 transition-all rounded-xl outline outline-2 outline-black text-black layout py-2 px-5;
-  }
-
-  .button-border {
-    @apply hover:opacity-80 transition-all rounded-xl outline outline-2 outline-chardonnay-400 text-text-400 layout py-2 px-5;
-  }
-
-  .button-chip {
-    @apply hover:bg-opacity-80 transition-all rounded-full bg-background-300 layout p-3;
-  }
-
-  .button-sec-chip {
-    @apply hover:bg-opacity-80 transition-all rounded-full bg-background-200 text-text-600 layout p-3;
+  .btn {
+    @apply hover:bg-opacity-80 transition-all rounded-xl bg-white text-black flex-center py-2 px-5;
   }
 }
